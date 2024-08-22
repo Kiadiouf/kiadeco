@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer un Burger</title>
+    <!-- Intégration de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Gérer un Burger</h2>
+        <form>
+            <div class="mb-3">
+                <label for="burgerName" class="form-label">Nom du Burger</label>
+                <input type="text" class="form-control" id="burgerName" placeholder="Entrez le nom du burger">
+            </div>
+            <div class="mb-3">
+                <label for="burgerDescription" class="form-label">Description</label>
+                <textarea class="form-control" id="burgerDescription" rows="3" placeholder="Décrivez le burger"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="burgerPrice" class="form-label">Prix</label>
+                <input type="number" class="form-control" id="burgerPrice" placeholder="Entrez le prix du burger">
+            </div>
+            <div class="mb-3">
+                <label for="burgerStatus" class="form-label">Statut</label>
+                <select class="form-select" id="burgerStatus">
+                    <option value="Disponible">Disponible</option>
+                    <option value="Indisponible">Indisponible</option>
+                    <option value="Archivé">Archivé</option>
+                </select>
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+                <button type="button" class="btn btn-warning">Modifier</button>
+                <button type="button" class="btn btn-danger">Supprimer</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
